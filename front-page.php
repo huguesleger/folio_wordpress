@@ -162,8 +162,8 @@ $designTxt = get_theme_mod( 'block_text_1_text' );
 				$sections = apply_filters (
 					'portfolio_hl_frontpage_sections_order',
 					array(
-                'slider',
               	'presentation',
+                'slider',
                 'icon',
                 'parallax',
                 'texte',
