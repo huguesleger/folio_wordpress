@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104.31" height="41.52" data-name="Calque 5" viewBox="0 0 104.31 41.52">
+  <g fill="none" stroke="#000" stroke-linejoin="round">
+    <path stroke-width="11.7" d="M11.57 5.58v35.93M34.49 5.58v35.93"/>
+    <path stroke-width="7.5" d="M17.35 23.67h11.38"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-linejoin="round">
+    <path stroke-width="6.6" d="M60.18 23.36H71.7"/>
+    <path stroke-width="7.9" d="M60.06 9.53h12.73"/>
+    <path stroke-width="12.7" d="M53.87 5.58v35.93"/>
+    <path stroke-width="7.9" d="M60.06 37.56h12.73"/>
+  </g>
+  <path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="11.3" d="M86.18 5.58v35.93"/>
+  <path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="7.9" d="M91.58 37.56h12.73"/>
+  <path fill="none" stroke="#000" stroke-width="2.5" d="M1.25 41.52l.04-40.27h38.96"/>
+</svg>

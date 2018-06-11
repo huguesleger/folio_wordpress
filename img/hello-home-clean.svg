@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104.16" height="104.64" data-name="Calque 6" viewBox="0 0 104.16 104.64">
+  <g fill="none" stroke="#000" stroke-linejoin="round">
+    <path stroke-width="11.7" d="M11.42 5.4v35.93M34.34 5.4v35.93"/>
+    <path stroke-width="7.5" d="M17.2 23.49h11.38"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-linejoin="round">
+    <path stroke-width="6.6" d="M60.03 23.36h11.52"/>
+    <path stroke-width="7.9" d="M59.91 9.53h12.73"/>
+    <path stroke-width="12.7" d="M53.72 5.58v35.93"/>
+    <path stroke-width="7.9" d="M59.91 37.56h12.73"/>
+  </g>
+  <path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="11.3" d="M86.03 4.74v35.94"/>
+  <path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="7.9" d="M91.43 36.72h12.73"/>
+  <path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="11.3" d="M11.42 67.08v35.93"/>
+  <path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="7.9" d="M16.89 99.08h12.74"/>
+  <circle cx="59.07" cy="85.23" r="13.56" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="11.7"/>
+  <path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="11.7" d="M97.04 67.1v23.61"/>
+  <path fill="none" stroke="#000" stroke-width="2.5" d="M1.25 41.34V1.25h38.96" data-name="Calque 4"/>
+  <circle cx="97.04" cy="97.9" r="2.8" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+</svg>

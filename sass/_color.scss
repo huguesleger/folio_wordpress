@@ -1,0 +1,24 @@
+//color base theme
+
+//btn round border
+.border-red {
+  background: transparent;
+  border-color: $color_red;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background: $color_red;
+  }
+}
+
+.border-white {
+  background: transparent;
+  border-color: #fff;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background: #fff;
+  }
+}
+
+._white {
+  color: #fff;
+}

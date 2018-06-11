@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'portfolio_hl-icon';
+  src:  url('./fonts/portfolio_hl-icon.eot?bifwj0');
+  src:  url('./fonts/portfolio_hl-icon.eot?bifwj0#iefix') format('embedded-opentype'),
+    url('./fonts/portfolio_hl-icon.ttf?bifwj0') format('truetype'),
+    url('./fonts/portfolio_hl-icon.woff?bifwj0') format('woff'),
+    url('./fonts/portfolio_hl-icon.svg?bifwj0#portfolio_hl-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.portfolio_hl-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'portfolio_hl-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.portfolio_hl-browser:before {
+  content: "\e900";
+}
+.portfolio_hl-laptop:before {
+  content: "\e901";
+}
+.portfolio_hl-light-bulb:before {
+  content: "\e902";
+}
+.portfolio_hl-responsive:before {
+  content: "\e903";
+}
+.portfolio_hl-settings:before {
+  content: "\e904";
+}
+.portfolio_hl-vector:before {
+  content: "\e905";
+}

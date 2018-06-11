@@ -1,0 +1,114 @@
+.cls-1 {
+  fill: #efef92;
+}
+
+.cls-2 {
+  fill: #f7ec69;
+}
+
+.cls-3 {
+  fill: #efd53a;
+}
+
+.cls-4 {
+  fill: #d30d3c;
+}
+
+.cls-5 {
+  fill: #f91545;
+}
+
+.cls-6 {
+  fill: #e7f251;
+}
+
+.cls-7 {
+  fill: #31918e;
+}
+
+.cls-8 {
+  fill: #67f4a0;
+}
+
+.cls-9 {
+  fill: #187772;
+}
+
+.cls-10 {
+  fill: #09aa8b;
+}
+
+.cls-11 {
+  fill: #2ad39b;
+}
+
+.cls-12 {
+  fill: #f74848;
+}
+
+.cls-13 {
+  fill: #ef3763;
+}
+
+.cls-14 {
+  fill: #d63060;
+}
+
+
+.block-t-color {
+  fill: #f7ec69;
+}
+
+.triangle-color {
+  fill: $color_grey_light;
+}
+
+
+.__tblack {
+  fill: #000;
+  stroke-width: 0.2;
+  stroke: #fff;
+  transition: fill 0.5s ease-in-out;
+}
+
+.__tyellow {
+  fill: #000;
+  stroke-width: 0.2;
+  stroke: $color_yellow;
+  transition: stroke 0.5s ease-in-out;
+}
+
+.__tred {
+  fill: #000;
+  stroke-width: 0.2;
+  stroke: $color_red;
+  transition: stroke 0.5s ease-in-out;
+}
+
+.img-nav polygon {
+  transition: stroke 0.5s ease-in-out;
+}
+
+.triangle {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  opacity: 0.8;
+  z-index: 3;
+  transition: opacity 0.5s ease-in-out;
+svg {
+  overflow: visible;
+  position: absolute;
+  // top: 10%;
+  top:0;
+  right: 15px;
+}
+polygon {
+  transition: fill 0.5s ease-in-out;
+}
+&.__hide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+}
