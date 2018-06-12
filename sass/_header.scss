@@ -8,25 +8,6 @@
 // 	}
 // }
 
-.hello_part2 {
-	fill: #000;
-}
-
-.hello_circle {
-	fill: $color_red;
-}
-
-
-.hello_fill {
-	 stroke: $color_red;
-	fill: none !important;
-	stroke-width: 2.5px;
-  transition: stroke 0.35s;
-	&.__none {
-		stroke: none;
-	}
-}
-
 
 #wp-custom-header-video {
 	width: 100%;
@@ -135,18 +116,30 @@
 
 #hello_part1 path {
 	opacity: 0;
+	fill: #000;
 }
 #hello_part2 path {
 	opacity: 0;
 }
 
-// #hello_part2 rect {
-// 	opacity: 0;
-// }
+.hello_part2 {
+	fill: #000;
+}
 
-// #letters-part2 path {
-// 	opacity: 0;
-// }
+.hello_circle {
+	fill: $color_red;
+}
+
+
+.hello_fill {
+	 stroke: $color_red;
+	fill: none !important;
+	stroke-width: 2.5px;
+  transition: stroke 0.35s;
+	&.__none {
+		stroke: none;
+	}
+}
 
 #circle path {
 	opacity: 0;
@@ -205,6 +198,7 @@
 	transition: transform 0.65s, width 0.69s;
 	width: 15%;
 	& path {
+		fill: #e6e6e6;
 		transition: fill 0.3s;
 	}
 	&.__deform {
@@ -212,7 +206,7 @@
 		transform: translate(calc(150% - 0px),110%) scale(3.5) !important;
 		transition: transform 0.85s, width 0.69s;
 		& path {
-			fill: #8c69f7;
+			fill: transparent;
 			transition: fill 0.3s;
 		}
 	}
@@ -243,7 +237,7 @@
 
 .hello-title {
 	width: 190px;
-	color: $color_dark;
+	color: #000;
   line-height: 1.4em;
 	font-weight: 700;
 	transition: 0.3s;

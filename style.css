@@ -679,20 +679,6 @@ template {
 [hidden] {
   display: none; }
 
-.hello_part2 {
-  fill: #000; }
-
-.hello_circle {
-  fill: #ff5252; }
-
-.hello_fill {
-  stroke: #ff5252;
-  fill: none !important;
-  stroke-width: 2.5px;
-  transition: stroke 0.35s; }
-  .hello_fill.__none {
-    stroke: none; }
-
 #wp-custom-header-video {
   width: 100%; }
 
@@ -768,10 +754,25 @@ template {
   stroke: #fff; }
 
 #hello_part1 path {
-  opacity: 0; }
+  opacity: 0;
+  fill: #000; }
 
 #hello_part2 path {
   opacity: 0; }
+
+.hello_part2 {
+  fill: #000; }
+
+.hello_circle {
+  fill: #ff5252; }
+
+.hello_fill {
+  stroke: #ff5252;
+  fill: none !important;
+  stroke-width: 2.5px;
+  transition: stroke 0.35s; }
+  .hello_fill.__none {
+    stroke: none; }
 
 #circle path {
   opacity: 0; }
@@ -814,13 +815,14 @@ template {
   transition: transform 0.65s, width 0.69s;
   width: 15%; }
   #block path {
+    fill: #e6e6e6;
     transition: fill 0.3s; }
   #block.__deform {
     width: 100%;
     transform: translate(calc(150% - 0px), 110%) scale(3.5) !important;
     transition: transform 0.85s, width 0.69s; }
     #block.__deform path {
-      fill: #8c69f7;
+      fill: transparent;
       transition: fill 0.3s; }
 
 #Border {
@@ -843,7 +845,7 @@ template {
 
 .hello-title {
   width: 190px;
-  color: #100c1e;
+  color: #000;
   line-height: 1.4em;
   font-weight: 700;
   transition: 0.3s; }
@@ -1477,7 +1479,7 @@ template {
   height: 100%;
   position: absolute;
   right: 0;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 3;
   transition: opacity 0.5s ease-in-out; }
   .triangle svg {
@@ -2538,18 +2540,6 @@ template {
   position: relative;
   width: 100%;
   height: 100%; }
-
-.big-title-present {
-  font-size: 14em;
-  text-align: right;
-  display: block;
-  text-transform: uppercase;
-  font-family: "Paytone One", sans-serif;
-  color: #f8f8f8;
-  position: absolute;
-  height: 300px;
-  top: 0;
-  right: -150px; }
 
 .section-title {
   font-size: 2.8em;

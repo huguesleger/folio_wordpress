@@ -385,7 +385,7 @@ $('.hello_fill').css('stroke','#ff5252');
 $('._E').css({
 transform: "translateY(0%)"
 });
-$('.hello-title').css('color','initial');
+$('.hello-title').css('color','#000');
 // $('.close-hello').remove();
 $("._L").removeClass("left");
 }

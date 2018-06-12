@@ -27,6 +27,7 @@ wp.customize( 'hello_bg_color', function( value ) {
 	} );
 } );
 
+
 wp.customize( 'graphic_bg_color', function( value ) {
 	value.bind( function( to ) {
 		$( '.part_full' ).css('background-color', to );
@@ -36,6 +37,12 @@ wp.customize( 'graphic_bg_color', function( value ) {
 	wp.customize( 'presentation_bg_color', function( value ) {
 		value.bind( function( to ) {
 			$( '#present' ).css('background-color', to );
+		} );
+	} );
+
+	wp.customize( 'presentation_title_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.section-title' ).css('color', to );
 		} );
 	} );
 

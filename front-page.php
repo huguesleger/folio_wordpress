@@ -68,7 +68,7 @@ $designTxt = get_theme_mod( 'block_text_1_text' );
 
       <div class="wrap-block">
       <svg xmlns="http://www.w3.org/2000/svg" id="block" width="100%" height="100%" viewBox="0 0 100 100">
-        <path fill="#e6e6e6" d="M0 0h199v199H0z"/>
+        <path d="M0 0h199v199H0z"/>
       </svg>
     </div>
 
@@ -168,7 +168,7 @@ $designTxt = get_theme_mod( 'block_text_1_text' );
                 'parallax',
                 'texte',
                 'post',
-                'contactme' /// en dur d en le template
+                'contactme' /// en dur dans le template
 
 
 

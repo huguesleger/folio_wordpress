@@ -251,26 +251,11 @@ function portfolio_hl_customize_register( $wp_customize ) {
 			)
 	);
 
-	// presentation ID
-	$wp_customize->add_setting( 'presentation_id',
-			array(
-					'sanitize_callback' => 'portfolio_hl_sanitize_text',
-					'default'           => $defaults['section_presentation'],
-			)
-	);
-	$wp_customize->add_control( 'presentation_id',
-			array(
-					'label' 		=> esc_html__('Section ID:', 'portfolio_hl'),
-					'section' 		=> 'section_presentation',
-					'description'   => esc_html__( 'L\'id de section que nous allons utiliser pour l\'ancre de lien.', 'portfolio_hl' )
-			)
-	);
-
 	//presentation title
 	$wp_customize->add_setting(
 			'presentation_title',
 			array(
-					'default'           => $defaults['section_presentation'],
+					'default'           => '',
 					'sanitize_callback' => 'portfolio_hl_sanitize_text',
 			)
 	);
@@ -287,7 +272,7 @@ function portfolio_hl_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 			'presentation_subtitle',
 			array(
-					'default'           => $defaults['section_presentation'],
+					'default'           => '',
 					'sanitize_callback' => 'portfolio_hl_sanitize_text',
 			)
 	);
@@ -304,7 +289,7 @@ function portfolio_hl_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 			'presentation_texte',
 			array(
-					'default'           => $defaults['section_presentation'],
+					'default'           => '',
 					'sanitize_callback' => 'portfolio_hl_sanitize_text',
 			)
 	);
@@ -323,7 +308,7 @@ function portfolio_hl_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'presentation_bg_color',
         array(
-            'default'           => $defaults['presentation_bg_color'],
+            'default'           => '',
             'sanitize_callback' => 'sanitize_hex_color',
             'transport'         => 'postMessage'
         )
@@ -339,25 +324,24 @@ function portfolio_hl_customize_register( $wp_customize ) {
         )
     );
 
-		///opacity Big title
-$wp_customize->add_setting(
-		'opacity_big_title',
-		array(
-				'default' => $defaults['opacity_big_title'],
-
-		)
-);
-$wp_customize->add_control(
-		'opacity_big_title',
-		array(
-				'label' => __( 'Opacity titre background ', 'portfolio_hl' ),
-				'section' => 'section_presentation',
-				'type' => 'number',
-				'description'   => __('opacity [defaut: 1]', 'portfolio_hl'),
-				'priority' => 15
-		)
-);
-
+		$wp_customize->add_setting(
+				'presentation_title_color',
+				array(
+						'default'           => '',
+						'sanitize_callback' => 'sanitize_hex_color',
+						'transport'         => 'postMessage'
+				)
+		);
+		$wp_customize->add_control(
+				new WP_Customize_Color_Control(
+						$wp_customize,
+						'presentation_title_color',
+						array(
+								'label'     => __('Couleur du titre', 'portfolio_hl'),
+								'section'   => 'section_presentation',
+						)
+				)
+		);
 
 
 

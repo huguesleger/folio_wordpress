@@ -26,6 +26,7 @@ function portfolio_hl_custom_styles($custom) {
   $hello_bg_color		        = get_theme_mod('hello_bg_color', $defaults['hello_bg_color']);
   $graphic_bg_color		        = get_theme_mod('graphic_bg_color', $defaults['graphic_bg_color']);
 	$presentation_bg_color		= get_theme_mod('presentation_bg_color', $defaults['presentation_bg_color']);
+  $presentation_title_color		= get_theme_mod('presentation_title_color');
   $slider_bg_color		      = get_theme_mod('slider_bg_color', $defaults['slider_bg_color']);
   $parallax_bg_color		    = get_theme_mod('parallax_bg_color', $defaults['parallax_bg_color']);
   $icon_bg_color		        = get_theme_mod('section_icon_bg_color', $defaults['section_icon_bg_color']);
@@ -56,8 +57,11 @@ function portfolio_hl_custom_styles($custom) {
 
   $custom 	.= ".site-title-mode  { color:" . esc_attr($logo_color) . ";}"."\n";
   $custom 	.= ".part_home { background-color:" . esc_attr($hello_bg_color) . ";}"."\n";
+  $custom 	.= "#block.__deform path { fill:" . esc_attr($hello_bg_color) . ";}"."\n";
   $custom 	.= ".part_full { background-color:" . esc_attr($graphic_bg_color) . ";}"."\n";
 	$custom 	.= "#present { background-color:" . esc_attr($presentation_bg_color) . ";}"."\n";
+  $custom 	.= ".section-title { color:" . esc_attr($presentation_title_color) . ";}"."\n";
+  $custom 	.= ".section-title::before { background-color:" . esc_attr($presentation_title_color) . ";}"."\n";
   $custom 	.= "#slider { background-color:" . esc_attr($slider_bg_color) . ";}"."\n";
   $custom 	.= "#icon { background-color:" . esc_attr($icon_bg_color) . ";}"."\n";
   $custom 	.= "#parallax { background-color:" . esc_attr($parallax_bg_color) . ";}"."\n";
@@ -67,6 +71,7 @@ function portfolio_hl_custom_styles($custom) {
   $custom 	.= "body  { color:" . esc_attr($body_color) . ";}"."\n";
   $custom 	.= "body  { background-color:" . esc_attr($bg_color) . ";}"."\n";
   $custom 	.= ".big-title-present  { opacity:" . esc_attr($opacity) . ";}"."\n";
+
 
   $custom 	.= "#cursus { background-color:" . esc_attr($cursus_bg_color) . ";}"."\n";
   $custom 	.= "#texte { background-color:" . esc_attr($about_txt_bg_color) . ";}"."\n";
