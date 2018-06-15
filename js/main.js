@@ -522,7 +522,7 @@ $("#Home").click(function(){
     rtl: false,
     arrows: false,
     adaptiveHeight: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: $('.main-slider').data('sliderspeed'),
     pauseOnHover: false,
     lazyLoad: 'progressive',

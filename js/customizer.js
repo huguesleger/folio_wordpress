@@ -52,6 +52,12 @@ wp.customize( 'graphic_bg_color', function( value ) {
 		} );
 	} );
 
+	wp.customize( 'slider_title_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.section-title' ).css('color', to );
+		} );
+	} );
+
 	wp.customize( 'section_icon_bg_color', function( value ) {
 		value.bind( function( to ) {
 			$( '#icon' ).css('background-color', to );
@@ -78,7 +84,13 @@ wp.customize( 'graphic_bg_color', function( value ) {
 
 	wp.customize( 'post_bg_color', function( value ) {
 		value.bind( function( to ) {
-			$( '#post' ).css('background-color', to );
+			$( '.bg-color-right' ).css('background-color', to );
+		} );
+	} );
+
+	wp.customize( 'post_bg_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.icon-work' ).css('background-color', to );
 		} );
 	} );
 

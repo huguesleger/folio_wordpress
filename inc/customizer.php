@@ -474,11 +474,32 @@ $wp_customize->add_control(
             )
         )
     );
-		//presentation title
+
+		$wp_customize->add_setting(
+				'slider_title_color',
+				array(
+						'default'           => '',
+						'sanitize_callback' => 'sanitize_hex_color',
+						'transport'         => 'postMessage'
+				)
+		);
+		$wp_customize->add_control(
+				new WP_Customize_Color_Control(
+						$wp_customize,
+						'slider_title_color',
+						array(
+								'label'     => __('Couleur du titre', 'portfolio_hl'),
+								'section'   => 'portfolio_hl_slider',
+								'priority'      => 3,
+						)
+				)
+		);
+
+		//slider title
 		$wp_customize->add_setting(
 				'section_slider_title',
 				array(
-						'default'           => $defaults['section_presentation'],
+						'default'           => '',
 						'sanitize_callback' => 'portfolio_hl_sanitize_text',
 				)
 		);
@@ -492,11 +513,27 @@ $wp_customize->add_control(
 				)
 		);
 
+		$wp_customize->add_setting(
+				'section_slider_text',
+				array(
+						'default'           => '',
+						'sanitize_callback' => 'portfolio_hl_sanitize_text',
+				)
+		);
+		$wp_customize->add_control(
+				'section_slider_text',
+				array(
+						'type'        => 'textarea',
+						'label'       => esc_html__('texte:', 'portfolio_hl'),
+						'section'     => 'portfolio_hl_slider',
+						'priority'      => 4,
+				)
+		);
+
 		//row
 		$wp_customize->add_setting(
 					'slider_class',
 					array(
-							'defaut' => $defaults['slider_class'],
 							'sanitize_callback' => 'portfolio_hl_sanitize_text',
 					)
 			);
@@ -504,10 +541,14 @@ $wp_customize->add_control(
 			$wp_customize->add_control(
 					'slider_class',
 					array(
-							'type'      => 'text',
-							'label'     => __('Ajoute une classe', 'portfolio_hl'),
-							'section'   => 'portfolio_hl_slider',
-							'priority'  => 4,
+							'label'    =>__('style','portfolio_hl'),
+							'type'     => 'select',
+							'section'  => 'portfolio_hl_slider',
+							'priority' => 5,
+							'choices'     => array(
+							 'container' => __( 'container'),
+							 'container-fluid'  => __( 'container-fluid'),
+							)
 					)
 			);
 

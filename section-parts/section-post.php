@@ -24,6 +24,7 @@
     while($query->have_posts()): $query->the_post(); global $post;
     ?>
     <div class="full-last-work">
+      <div class="bg-color-right"></div>
       <?php
       $post_thumb = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
       if ( $post_thumb ) { ?>

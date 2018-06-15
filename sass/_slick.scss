@@ -51,7 +51,7 @@
 	font-size: 2.5em;
 	font-family: $font_title;
 	color: $color_dark;
-	padding: 20px 0;
+	margin: 15px 0;
 }
 
 @media screen and(max-width: 767px){
@@ -72,8 +72,9 @@
 	color: $color_grey_light;
 	word-break: break-word;
 	padding-left: 0;
+	max-height: 89px;
+	overflow: hidden;
 	// width: 315px;
-	text-align: justify;
 	&::first-letter {
 		 text-transform:uppercase;
 	}
@@ -97,7 +98,6 @@
 
 .main-slider-box {
   position: relative;
-	padding-top: 30px;
 
 }
 

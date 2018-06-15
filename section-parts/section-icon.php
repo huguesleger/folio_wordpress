@@ -77,7 +77,7 @@ endif;
                 ?>
                 <div class="col-md-6 col-md-offset-1">
                         <?php if ( $title ) { ?><h2 class="section-title-icon"><?php echo esc_html( $title ); ?><span class="title-span"><?php echo esc_html( $title_span ); ?></span>.</h2><?php } ?>
-                        <?php if ( $desc ) { ?><div class="section-desc-icon"><?php echo apply_filters( 'portfolio_hl_content_text', $desc ); ?></div><?php } ?>
+                        <?php if ( $desc ) { ?><div class="section-desc-icon"><p><?php echo apply_filters( 'portfolio_hl_content_text', $desc ); ?></p></div><?php } ?>
                 </div>
                 <?php
             }

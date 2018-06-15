@@ -36,7 +36,7 @@
 	// background: #000;
 	 display: none;
 	 &.__open {
-		 background-color: transparent;
+		 background-color: transparent !important;
 		 transition: 0.3s ease-in-out;
 	 }
 }
@@ -97,7 +97,7 @@
 
 	z-index: 2;
 	&:hover {
-		fill: $color_dark;
+		fill: #000;
 		transition: fill 0.3s ease-in-out;
 	}
 }

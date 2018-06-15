@@ -31,13 +31,25 @@ endif;
 	$sliderspeed = get_theme_mod('slider_speed', '4000');
   $slider_class = get_theme_mod('slider_class', 'container-fluid');
   $title      = get_theme_mod( 'section_slider_title' );
+  $texte      = get_theme_mod( 'section_slider_text' );
   ?>
     <?php
 
-    if ( $title ) { ?><div class="container"><h2 class="section-title title-right"><?php echo esc_html( $title ); ?></h2></div><?php }
+/**
+   *  if ( $title ) { ?><div class="container">
+   *    <h2 class="section-title title-right"><?php echo esc_html( $title ); ?></h2>
+   *  <?php }
+   *  if ( $texte ) { ?>
+   *  <div class="section-desc-slider">
+   *    <p><?php echo esc_html( $texte ); ?></p>
+   *    </div>
+   *  </div>
+   *  <?php }
+     */
 
 		echo '<div class="main-slider-box">';
-		echo 	'<div class="main-slider '. $slider_class .'" data-sliderspeed="' . absint($sliderspeed) . '">';
+    	echo '<div class="'. $slider_class .'">';
+		echo 	'<div class="main-slider" data-sliderspeed="' . absint($sliderspeed) . '">';
 
 			for ($c = 1; $c <= 3; $c++) {
 
@@ -71,5 +83,6 @@ endif;
       ?>
     </div>
   </div>
+</div>
   </div>
 </section>
