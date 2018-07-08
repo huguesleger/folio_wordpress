@@ -53,7 +53,7 @@ function adjust_body_class( $classes ) {
 
     foreach ( $classes as $key => $value ) {
         if ( $value == 'page-template-default') unset( $classes[ $key ] );
-        if ( $value == 'page') unset( $classes[ $key ] );
+        // if ( $value == 'page') unset( $classes[ $key ] );
         if ( $value == 'blog') unset( $classes[ $key ] );
         if ( $value == 'archive') unset( $classes[ $key ] );
         if ( $value == 'category') unset( $classes[ $key ] );
@@ -112,5 +112,3 @@ function the_post_thumbnail_remove_class($output) {
 	return $output;
 }
 add_filter('post_thumbnail_html', 'the_post_thumbnail_remove_class');
-
- 

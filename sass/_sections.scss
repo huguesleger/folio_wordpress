@@ -21,6 +21,7 @@
   position: relative;
 	padding-top: 15px;
 	min-height: 650px;
+	overflow: hidden;
 	// background-image: url('./img/ville.jpg');
 	// background-size: cover;
 	// background-attachment: fixed;
@@ -45,6 +46,17 @@
 // 	border-bottom: 10vh solid transparent;
 // 	border-right: 100vw solid #ffffff;
 // }
+}
+
+.bg-fluid{
+	position: absolute;
+  right: 0;
+  top: -125%;
+  bottom: 0;
+}
+
+.color-form {
+	fill: #fff;
 }
 
 #present .container {
@@ -156,6 +168,17 @@
 }
 
 /////////////section icon////////////////////
+
+.bloc-txt-icon.style-inline{
+	margin-bottom: 90px;
+	padding-left: 60px;
+}
+
+.main-icon.style-inline {
+		margin-bottom: 90px;
+		display: flex;
+		justify-content: center;
+}
 
 .content-section-icon {
 	padding-top: 90px;
@@ -474,10 +497,6 @@ position: relative;
 	overflow: hidden;
 }
 
-.wrap-contactme {
-	height: 195px;
-}
-
 
 .bg-round {
 	width: 100%;
@@ -510,12 +529,14 @@ right: 0;
 }
 
 .btn-link-contact {
+	padding-top: 20px;
 	font-size: 2.5em;
+	display: block;
 	font-family: $font_title;
 	position: relative;
 	transition: 0.2s ease-in-out;
 	&:hover {
-		color: #fff;
+		color: $color_primary;
 		transition: 0.2s ease-in-out;
 	}
 	svg {

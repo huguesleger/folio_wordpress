@@ -23,13 +23,6 @@ if( ! function_exists('portfolio_hl_setup')) :
     ));
 
 
-
-
-//     function add_menuclass($ulclass) {
-//    return preg_replace('/<a /', '<a class="menu__item-name"', $ulclass);
-// }
-// add_filter('wp_nav_menu','add_menuclass');
-
     /*
    * Switch default core markup for search form, comment form, and comments
    * to output valid HTML5.
@@ -131,6 +124,7 @@ function portfolio_hl_scripts() {
 	wp_enqueue_script( 'portfolio_hl-main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true );
 
   wp_enqueue_script( 'portfolio_hl-hello', get_template_directory_uri() . '/js/hello.js', array('jquery'), '', true );
+  wp_enqueue_script( 'portfolio_hl-illu', get_template_directory_uri() . '/js/illu.js', array('jquery'), '', true );
 
 
 	wp_enqueue_script('masonry');
@@ -145,6 +139,9 @@ function portfolio_hl_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_hl_scripts' );
+
+
+
 
 /**
  * Enqueue Bootstrap

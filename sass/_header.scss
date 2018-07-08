@@ -136,6 +136,10 @@
 	fill: none !important;
 	stroke-width: 2.5px;
   transition: stroke 0.35s;
+	&.__white {
+		stroke: #fff;
+		transition: stroke 0.35s;
+	}
 	&.__none {
 		stroke: none;
 	}
@@ -206,7 +210,6 @@
 		transform: translate(calc(150% - 0px),110%) scale(3.5) !important;
 		transition: transform 0.85s, width 0.69s;
 		& path {
-			fill: transparent;
 			transition: fill 0.3s;
 		}
 	}
@@ -221,6 +224,13 @@
   left: 49.5vw;
 	top: 95vh;
   z-index: 560;
+	&::before {
+		content: 'Enter';
+    position: absolute;
+    bottom: -11px;
+    font-size: 9px;
+    left: -3px;
+	}
 }
 
 
@@ -482,6 +492,7 @@ transition: transform 0.55s;
 
 
 .bullet-round {
+	position: relative;
 	background: transparent;
 	border: 1px solid #000;
 	z-index: 100;
@@ -493,5 +504,60 @@ transition: transform 0.55s;
 	&.__active {
 		transition: 0.35s;
 		background: #000;
+		&.btn_hello::before {
+			width: 32px;
+		}
+		&.btn_design::before {
+			width: 32px;
+		}
+		&.btn_hello::after {
+			font-size: 14px;
+			left: -78px;
+			top: -8px;
+		}
+		&.btn_design::after {
+			font-size: 14px;
+			left: -88px;
+			top: -8px;
+
+		}
+	}
+	&.btn_hello {
+		&::before {
+			content:'';
+			position: absolute;
+			left: -38px;
+			top: 4px;
+			background: #000;
+			height: 0.5px;
+			width: 22px;
+		}
+		&::after {
+			content:'Hello';
+			position: absolute;
+			left: -66px;
+			top: -5px;
+	    font-size: 10px;
+			color: #fff;
+		}
+	}
+	&.btn_design {
+		&::before {
+			content:'';
+			position: absolute;
+			left: -38px;
+			top: 4px;
+			background: #000;
+			height: 0.5px;
+			width: 22px;
+		}
+		&::after {
+			content:'Create';
+			position: absolute;
+			left: -73px;
+			top: -5px;
+			font-size: 10px;
+			color: #fff;
+		}
 	}
 }

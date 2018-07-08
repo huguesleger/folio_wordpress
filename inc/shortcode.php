@@ -33,6 +33,7 @@ function block_shortcode( $atts , $content = null ) {
 		array(
       'title' =>'',
 			'class'=>'',
+			'full' =>'',
       'txt' => '',
       'background'=> '#fff',
 			'bg_section' => '',
@@ -42,7 +43,7 @@ function block_shortcode( $atts , $content = null ) {
 		), $atts )
 	);
 return '<div class="block-img_txt" style=" background-color:'. $bg_section .'; padding-top:'. $padding .'; padding-bottom:'. $padding .'">
-				<div class="wrap-content-single">
+				<div class="wrap-content-single '. $full .'">
 				<div class="middle-img_txt '. $class .'"><div class="cover-detail" style="background-image: url(' . $img . ')"></div>
 				<div class="content-detail" style=" background-color:'. $background .'">
         <div class="detail-title"><h3 style="color:'. $color .'">'.$title.'</h3></div>

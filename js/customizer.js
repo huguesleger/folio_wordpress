@@ -15,6 +15,18 @@
 		} );
 	} );
 
+	wp.customize( 'logo_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.title-branding' ).css('color', to );
+		} );
+	} );
+
+	wp.customize( 'logo_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.logo svg path' ).css('fill', to );
+		} );
+	} );
+
 	wp.customize( 'blogdescription', function( value ) {
 	value.bind( function( to ) {
 		$( '.site-description' ).text( to );
@@ -66,6 +78,12 @@ wp.customize( 'graphic_bg_color', function( value ) {
 
 	wp.customize( 'icon_color', function( value ) {
 	value.bind( function( to ) {
+		$( '.section-title-icon' ).css('color', to );
+	} );
+	} );
+
+	wp.customize( 'icon_color', function( value ) {
+	value.bind( function( to ) {
 		$( '.icon-item i' ).css('color', to );
 	} );
 	} );
@@ -80,6 +98,18 @@ wp.customize( 'graphic_bg_color', function( value ) {
 	value.bind( function( to ) {
 		$( '#parallax' ).css('background-color', to );
 	} );
+	} );
+
+	wp.customize( 'section_texte_bg_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#sectionTexte' ).css('background-color', to );
+		} );
+	} );
+
+	wp.customize( 'section_texte_title_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#sectionTexte .section-title' ).css('color', to );
+		} );
 	} );
 
 	wp.customize( 'post_bg_color', function( value ) {
@@ -136,12 +166,52 @@ wp.customize( 'graphic_bg_color', function( value ) {
 		} );
 	} );
 
+	//portfolio
+	wp.customize( 'page_header_color', function( value ) {
+	value.bind( function( to ) {
+		$( '.wrap-folio' ).css('background-color', to );
+	} );
+	} );
+
+	wp.customize( 'page_header_title_color', function( value ) {
+	value.bind( function( to ) {
+		$( '.wrap-folio .info-txt' ).css('color', to );
+	} );
+	} );
+
+	//page header
+	wp.customize( 'page_header_color', function( value ) {
+	value.bind( function( to ) {
+		$( '.content-header' ).css('background-color', to );
+	} );
+	} );
+
+	wp.customize( 'page_header_title_color', function( value ) {
+	value.bind( function( to ) {
+		$( '.info-txt' ).css('color', to );
+	} );
+	} );
+
+//hello
+wp.customize( 'page_header_title_color', function( value ) {
+value.bind( function( to ) {
+	$( '.hello_circle' ).css('fill', to );
+} );
+} );
+
+wp.customize( 'page_header_title_color', function( value ) {
+value.bind( function( to ) {
+	$( '.hello_fill' ).css('stroke', to );
+} );
+} );
+
 
 	wp.customize( 'body_color', function( value ) {
 	value.bind( function( to ) {
 		$( 'body' ).css('color', to );
 	} );
 } );
+
 
 wp.customize( 'bg_color', function( value ) {
 value.bind( function( to ) {

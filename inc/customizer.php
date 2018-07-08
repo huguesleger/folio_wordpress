@@ -426,6 +426,25 @@ $wp_customize->add_control(
 			)
 	);
 
+	$wp_customize->add_setting(
+			'section_texte_title_color',
+			array(
+					'default'           => '',
+					'sanitize_callback' => 'sanitize_hex_color',
+					'transport'         => 'postMessage'
+			)
+	);
+	$wp_customize->add_control(
+			new WP_Customize_Color_Control(
+					$wp_customize,
+					'section_texte_title_color',
+					array(
+							'label'     => __('Couleur du titre', 'portfolio_hl'),
+							'section'   => 'section_texte',
+					)
+			)
+	);
+
 //section 2//
 ////////////
 
@@ -683,6 +702,28 @@ $wp_customize->add_control(
 					)
 			);
 
+			//style
+			$wp_customize->add_setting(
+						'slider_style',
+						array(
+								'sanitize_callback' => 'portfolio_hl_sanitize_text',
+						)
+				);
+
+				$wp_customize->add_control(
+						'slider_style',
+						array(
+								'label'    =>__('style','portfolio_hl'),
+								'type'     => 'select',
+								'section'  => 'section_icon',
+								'priority' => 9,
+								'choices'     => array(
+								 'col-md-12 style-inline' => __( 'inline'),
+								 'col-md-5 style-column'  => __( 'column'),
+								)
+						)
+				);
+
 
 			//icon section title
 			$wp_customize->add_setting(
@@ -802,6 +843,7 @@ $wp_customize->add_control(
 									'section'  => 'section_icon',
 									'priority' => 10,
 									'choices'     => array(
+										''=> __(''),
 									 'portfolio_hl-browser' => __( 'browser'),
 									 'portfolio_hl-laptop'  => __( 'laptop'),
 									 'portfolio_hl-light-bulb'  => __( 'light-bulb'),
@@ -1143,6 +1185,8 @@ $wp_customize->add_control(
 					)
 			);
 
+
+
 		// //Full width singles
     // $wp_customize->add_setting(
     //     'fullwidth_single',
@@ -1335,12 +1379,23 @@ $wp_customize->add_control(
 							 $wp_customize,
 							 'logo_color',
 							 array(
-									 'label' 	=> __('logo color', 'portfolio_hl'),
+									 'label' 	=> __('logo', 'portfolio_hl'),
 									 'section' 	=> 'colors',
 									 'priority' 	=> 1
 							 )
 					 )
 			 );
+
+
+			 $wp_customize->add_control( new portfolio_hl_Info( $wp_customize, 'colors_body', array(
+					 'label' => __('Body ', 'portfolio_hl'),
+					 'section' => 'colors',
+					 'settings' => array(),
+					 'priority' => 3,
+					 ) )
+			 );
+
+
 				$wp_customize->add_setting(
 					 'bg_color',
 					 array(
@@ -1354,12 +1409,14 @@ $wp_customize->add_control(
 							 $wp_customize,
 							 'bg_color',
 							 array(
-									 'label' 	=> __('background color', 'portfolio_hl'),
+									 'label' 	=> __('background', 'portfolio_hl'),
 									 'section' 	=> 'colors',
-									 'priority' 	=> 11
+									 'priority' 	=> 4,
 							 )
 					 )
 			 );
+
+
 
 			 $wp_customize->add_setting(
 					 'body_color',
@@ -1374,14 +1431,63 @@ $wp_customize->add_control(
 							 $wp_customize,
 							 'body_color',
 							 array(
-									 'label' 	=> __('body texte color', 'portfolio_hl'),
+									 'label' 	=> __('texte', 'portfolio_hl'),
 									 'section' 	=> 'colors',
-									 'priority' 	=> 12
+									 'priority' 	=> 5,
 							 )
 					 )
 			 );
 
 
+			$wp_customize->add_control( new portfolio_hl_Info( $wp_customize, 'colors', array(
+					'label' => __('Page ', 'portfolio_hl'),
+					'section' => 'colors',
+					'settings' => array(),
+					'priority' => 6,
+					) )
+			);
+
+			//title header color
+			$wp_customize->add_setting(
+					'page_header_title_color',
+					array(
+							'default'           => '',
+							'sanitize_callback' => 'sanitize_hex_color',
+							'transport'         => 'postMessage'
+					)
+			);
+			$wp_customize->add_control(
+					new WP_Customize_Color_Control(
+							$wp_customize,
+							'page_header_title_color',
+							array(
+									'label'     => __('Couleur principal', 'portfolio_hl'),
+									'section'   => 'colors',
+									'priority'      => 7,
+							)
+					)
+			);
+
+			//bg header color
+			$wp_customize->add_setting(
+					'page_header_color',
+					array(
+							'default'           => '',
+							'sanitize_callback' => 'sanitize_hex_color',
+							'transport'         => 'postMessage'
+					)
+			);
+			$wp_customize->add_control(
+					new WP_Customize_Color_Control(
+							$wp_customize,
+							'page_header_color',
+							array(
+									'label'     => __('background header', 'portfolio_hl'),
+									'section'   => 'colors',
+									'priority'      => 8,
+							)
+					)
+			);
 
 	/**
 	 * Footer

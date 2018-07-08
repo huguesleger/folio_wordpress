@@ -6,13 +6,14 @@
 
 ?>
 
-<article id=" post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<!-- <header class="entry-headerr">
 
 	</header> -->
 
 
-	<div class="entry-content container">
+	<div class="container-fluid">
+		<div class="entry-content">
 		<?php
 			the_content();
 
@@ -22,5 +23,6 @@
 			) );
 		?>
 	</div>
+</div>
 
 </article>

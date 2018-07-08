@@ -91,9 +91,16 @@
                         {
                         type   : 'textbox',
                         name   : 'class',
-                        label  : 'class (ajouter la classe "inverse")',
+                        label  : 'affichage (ajouter la classe "inverse")',
                         value  : ''
                     },
+                    
+                    {
+                    type   : 'textbox',
+                    name   : 'full',
+                    label  : 'classe (ajouter la classe "full_block")',
+                    value  : ''
+                },
 
                     {
                     type   : 'textbox',
@@ -106,7 +113,8 @@
                     ],
 
                     onsubmit: function( e ) {
-                        editor.insertContent( '[block padding="'+ e.data.padding +'" img="'+ e.data.img +'" title="'+ e.data.titlebox +'" txt="'+ e.data.textbox +'" color="'+ e.data.colorbox +'" background="'+ e.data.colorpicker +'" bg_section="'+ e.data.colorpicker2 +'" class="'+ e.data.class +'" ]');
+                        editor.insertContent( '[block padding="'+ e.data.padding +'" img="'+ e.data.img +'" title="'+ e.data.titlebox +'" txt="'+ e.data.textbox +'" color="'+ e.data.colorbox +'" background="'+ e.data.colorpicker
+                         +'" bg_section="'+ e.data.colorpicker2 +'" class="'+ e.data.class +'"  full="'+ e.data.full +'" ]');
                     }
                 });
 

@@ -65,10 +65,10 @@ var logoAnimation = function() {
     },
     duration: 2000
   });
+
 }
 
 document.addEventListener('DOMContentLoaded', logoAnimation, false);
-
 ///////////////////////
 ///////////////////////
 

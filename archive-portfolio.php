@@ -22,7 +22,7 @@ get_header(); ?>
 			<?php }
 			 ?> -->
 
-			 <header class="header-folio">
+			 <header class="header-page">
 			 	<div class="wrap-folio">
 			 		<div class="content-folio">
             <?php   $title      = get_theme_mod( 'title_page_folio' ); ?>
@@ -32,6 +32,7 @@ get_header(); ?>
 						</div>
 						<div class="clear-fix"></div> -->
 						<div class="container">
+							<div class="clear-fix"></div>
 							<div class="info-folio">
 							<p class="info-txt"><span class="_txt-lite _white">sélectionssssssss</span><br> de mes travaux.</p>
 							</div>

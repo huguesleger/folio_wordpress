@@ -7,16 +7,17 @@
 
  <?php
 get_header();
-$classes    = 'contact';
+// $classes    = 'contact';
+// <?php echo esc_attr( apply_filters( 'portfolio_hl_section_class', $classes, 'contact' ) );
  ?>
 <!-- <header class="header-folio"> -->
 
-<header id="<?php echo esc_attr( 'Header-contact' ); ?>" class="header-folio <?php echo esc_attr( apply_filters( 'portfolio_hl_section_class', $classes, 'contact' ) ); ?>">
- <div class="content-contact">
-        <h2 class="title-folio"><?php echo the_title(); ?></h2>
+<header id="<?php echo esc_attr( 'Header-contact' ); ?>" class="header-page">
+ <div class="content-header __right">
+        <!-- <h2 class="title-folio"><?php echo the_title(); ?></h2> -->
    <div class="contact-txt">
      <div class="info-folio">
-     <p class="info-txt"><span class="_txt-lite _white">Hello !</span><br> un peu de blabla.</p>
+     <p class="info-txt"><span class="_txt-lite _white"><?php echo the_title(); ?></span><br> un peu de blabla.</p>
      </div>
    </div>
     </div>

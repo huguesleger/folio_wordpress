@@ -5,15 +5,16 @@
 
  <?php
 get_header();
-$classes    = 'about';
+
+
  ?>
 <!-- <header class="header-folio"> -->
 
-<header id="<?php echo esc_attr( 'Header-about' ); ?>" class="header-folio <?php echo esc_attr( apply_filters( 'portfolio_hl_section_class', $classes, 'about' ) ); ?>">
- <div class="content-about">
+<header id="<?php echo esc_attr( 'Header-about' ); ?>" class="header-page">
+ <div class="content-header">
    <div class="about-txt">
      <div class="info-folio">
-     <p class="info-txt"><span class="_txt-lite _white">Hello !</span><br> un peu de blabla.</p>
+     <p class="info-txt"><span class="_txt-lite _white"><?php echo the_title(); ?></span><br>un peu de blabla.</p>
      </div>
    </div>
     </div>
@@ -26,7 +27,7 @@ $classes    = 'about';
        }?>
 
 
-     <h2 class="title-folio"><?php echo the_title(); ?></h2>
+     <!-- <h2 class="title-folio"><?php echo the_title(); ?></h2> -->
    </div>
 </header>
 

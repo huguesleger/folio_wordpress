@@ -11,8 +11,7 @@ $classes    = 'section-contactme';
   <div class="container">
     <div class="wrap-contactme">
     <div class="col-md-4">
-      <p class="txt-contactme">Envie de collaborer ?</p>
-      <a class="btn-link-contact" href="<?php the_permalink(8); ?>"><i class="fas fa-long-arrow-alt-right"></i> écrivez-moi</a>
+      <a class="btn-link-contact" href="<?php the_permalink(8); ?>"><i class="fas fa-long-arrow-alt-right"></i> contactez-moi</a>
       <!-- <img class="icon-smile" src="<?php echo get_template_directory_uri(); ?>/img/face.png"> -->
       <a class="link-email" href="mailto:contactme@hl-developerz.com">contactme@hl-developerz.com</a>
       </div>

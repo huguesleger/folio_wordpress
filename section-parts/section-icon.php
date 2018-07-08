@@ -31,12 +31,14 @@ endif;
   $desc             = get_theme_mod( 'section_icon_desc' );
   $texte            = get_theme_mod( 'section_icon_texte' );
   $classe           = get_theme_mod('circle_icon');
+  $style            = get_theme_mod('slider_style', 'col-md-5 style-column');
+
 
   ?>
     <?php
 
 
-		echo 	'<div class="main-icon col-md-5">';
+		echo 	'<div class="main-icon '. $style .'">';
 
 			for ($c = 1; $c <= 6; $c++) {
 
@@ -53,7 +55,7 @@ endif;
 
 
       if( $icon_icon) { ?>
-        <div class="col-xs-6 col-sm-4 col-md-4">
+        <div class="col-xs-6 col-sm-4 col-md-4 icon-style">
           <div class="icon-item <?php echo esc_attr( $classe ); ?>">
             <?php if ($c != 1) : ?>
               <i class="<?php echo esc_attr( $icon_icon ); ?>"></i>
@@ -74,8 +76,9 @@ endif;
             <?php
 
             if ( $title || $title_span || $desc ) {
-                ?>
-                <div class="col-md-6 col-md-offset-1">
+
+                	echo 	'<div class="col-md-6 col-md-offset-1 bloc-txt-icon '. $style .'">';     ?>
+
                         <?php if ( $title ) { ?><h2 class="section-title-icon"><?php echo esc_html( $title ); ?><span class="title-span"><?php echo esc_html( $title_span ); ?></span>.</h2><?php } ?>
                         <?php if ( $desc ) { ?><div class="section-desc-icon"><p><?php echo apply_filters( 'portfolio_hl_content_text', $desc ); ?></p></div><?php } ?>
                 </div>

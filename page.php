@@ -33,7 +33,9 @@ get_header(); ?>
 			<?php }
 			 ?>
 			<?php else : ?>
-				<div class="wech"></div>
+				<div class="no-header-page">
+							<?php the_title( '<h2 class="title-page __no-header">', '</h2>' ); ?>
+				</div>
 			<?php endif; ?>
 
 			<?php

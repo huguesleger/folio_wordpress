@@ -54,8 +54,8 @@
 	<?php
 	// Previous/next post navigation.
 	the_post_navigation( array(
-		'prev_text' => '<span class="post-meta _red">Prev</span><span class="btn-default-border btn-border-white btn-btn">%title</span>',
-		'next_text' => '<span class="post-meta _white">Next</span><span class="btn-default-border btn-border-color btn-btn">%title</span>',
+		'prev_text' => '<span class="post-meta _prev"><i class="fas fa-chevron-left"></i><span class="title_meta">%title</span></span>',
+		'next_text' => '<span class="post-meta _next"><i class="fas fa-chevron-right"></i><span class="title_meta">%title</span></span>',
 	) );
 	?>
 
